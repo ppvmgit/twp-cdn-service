@@ -33,7 +33,7 @@ FROM base AS dev
 
 # Install the system packages required for debugging.
 RUN dnf install -y less procps net-tools iputils bind-utils vim-minimal
-
+  
 # Copy source from host to container
 COPY --from=src . /opt/twp/cdn/src
 
